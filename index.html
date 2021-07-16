@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Find the Number Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+
 </head>
+
 <body>
-    
+
+    <div class="container_top">
+        <img src="./images/guess_the_number.png" alt="guess_the_number">
+    </div>
+
+    <div class="container">
+        <h2 class="header_top">(1-100)</h2>
+        <div class="box_input">
+            <input type="number" id="guess" style="text-align: center">
+            <button type="button" onclick="checkFunction()" id="check_button">
+                Check
+            </button>
+        </div>
+        <p id="result"></p>
+        <!-- <img src="./images/magic_hat.png" alt="magic_hat" width="15%" id="magig_hat"> -->
+        <h4 class="header_bottom">Write the number.</h4>
+        <p>Number of attempts: <span id="span_counter">0</span></p>
+    </div>
+
+    <script src="./add.js"></script>
+
 </body>
+
 </html>
